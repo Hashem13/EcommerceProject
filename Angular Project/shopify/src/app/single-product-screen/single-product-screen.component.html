@@ -1,0 +1,47 @@
+    <header>
+    <h1>{{product.title}}</h1>
+    <nav>
+      <ul>
+        <li><a href="#description">Description</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="product-image">
+      <img src={{product.image}} alt="Product Image">
+    </section>
+    <section id="description">
+      <h2>Description</h2>
+      <p>{{product.description}}</p>
+    </section>
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+      </ul>
+    </section>
+    <section id="price">
+      <h2>Price</h2>
+      <p>${{product.price}}</p>
+    </section>
+    <section id="reviews">
+      <h2>{{product.rating.count}}  Reviews</h2>
+      <p>Rating : {{product.rating.rate}}/5</p>
+      <div class="review">
+        <h3>John Doe</h3>
+        <p>Great product! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac enim vitae nulla tristique mollis. Duis ut efficitur odio.</p>
+      </div>
+      <div class="review">
+        <h3>Jane Smith</h3>
+        <p>Not as good as I expected. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac enim vitae nulla tristique mollis. Duis ut efficitur odio.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Yusuf Hashem</p>
+  </footer>

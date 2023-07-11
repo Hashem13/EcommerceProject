@@ -1,0 +1,26 @@
+<!-- <ul class="list-group">
+  <li 
+      *ngFor="let prod of products"
+      class="list-group-item">
+      <div class="card">
+        <img src={{prod.image}} alt="Denim Jeans" style="width:100%">
+        <h1>{{prod.title}}</h1>
+        <p class="price">${{prod.price}}</p>
+        <p>{{prod.description}}</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+  </li>
+</ul> -->
+<section class="cards">
+  <div class="card" *ngFor="let prod of products">
+    <img src={{prod.image}} alt="item" style="width:100%">
+    <h1>{{prod.title}}</h1>
+    <p class="price">${{prod.price}}</p>
+    <p class="desc">{{prod.description}}</p>
+    <p><button (click)="AddToCart(prod)">Add to Cart</button></p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2023 Yusuf Hashem</p>
+</footer>

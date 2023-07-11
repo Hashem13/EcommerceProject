@@ -1,0 +1,14 @@
+
+<section class="cards">
+    <!-- <div class="card" *ngFor="let prod of data"> -->
+      <ol>
+        <li *ngFor="let prod of data">
+          <p class="name">{{prod.title}} </p>
+          <p class="name">{{prod.price}}$</p>
+          <p class="img"><img src={{prod.image}} alt=""></p>
+        </li>
+      </ol>
+    <!-- </div> -->
+  </section>
+  <p class="total">Total:{{total}}$</p>
+  <button class="checkout-btn">Checkout</button>
